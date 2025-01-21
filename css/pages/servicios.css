@@ -1,0 +1,97 @@
+/* Estilos específicos para la página de servicios */
+
+.services {
+    padding-top: 8rem;
+}
+
+.service {
+    background-color: var(--light-color);
+    border-radius: var(--border-radius);
+    padding: 2.5rem;
+    text-align: center;
+    transition: var(--transition);
+    box-shadow: var(--shadow);
+}
+
+.service:hover {
+    transform: translateY(-0.5rem);
+}
+
+.service__icon {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    background-color: var(--primary-color-light);
+    width: 5rem;
+    height: 5rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.service__title {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--title-color);
+}
+
+.service__gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.service__gallery img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: var(--border-radius-sm);
+    transition: var(--transition);
+}
+
+.service__gallery img:hover {
+    transform: scale(1.05);
+}
+
+.service__list {
+    text-align: left;
+    margin-bottom: 1.5rem;
+    padding-left: 1.5rem;
+}
+
+.service__list li {
+    margin-bottom: 0.5rem;
+    position: relative;
+}
+
+.service__list li::before {
+    content: "•";
+    color: var(--primary-color);
+    position: absolute;
+    left: -1rem;
+}
+
+.service__button {
+    width: 100%;
+    margin-top: 1rem;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .services__container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .service__gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .service__gallery {
+        grid-template-columns: 1fr;
+    }
+} 

@@ -1,0 +1,87 @@
+/* Estilos específicos para la página de otros servicios */
+
+.specialties {
+    padding-top: 8rem;
+}
+
+.specialties__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2.5rem;
+}
+
+.specialty {
+    background-color: var(--light-color);
+    padding: 2.5rem;
+    border-radius: var(--border-radius);
+    text-align: center;
+    transition: var(--transition);
+    box-shadow: var(--shadow);
+}
+
+.specialty:hover {
+    transform: translateY(-0.5rem);
+}
+
+.specialty__icon {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    background-color: var(--primary-color-light);
+    width: 5rem;
+    height: 5rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.specialty h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--title-color);
+}
+
+.specialty p {
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .specialties__container {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 2rem;
+    }
+
+    .specialty {
+        padding: 2rem;
+    }
+
+    .specialty__icon {
+        font-size: 2rem;
+        width: 4rem;
+        height: 4rem;
+    }
+
+    .specialty h3 {
+        font-size: 1.25rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .specialties__container {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .specialty {
+        padding: 1.5rem;
+    }
+
+    .specialty__icon {
+        font-size: 1.75rem;
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+} 
