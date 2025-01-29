@@ -1,0 +1,46 @@
+/* CTA Section */
+.cta {
+    padding: var(--section-spacing) 0;
+    background: linear-gradient(rgba(255, 75, 43, 0.9), rgba(255, 75, 43, 0.9)),
+                url('../img/cta-bg.jpg') center/cover;
+    color: var(--light-color);
+    text-align: center;
+}
+
+.cta__content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.cta__title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.cta__description {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+}
+
+.cta__buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .cta__title {
+        font-size: 2rem;
+    }
+
+    .cta__description {
+        font-size: 1.1rem;
+    }
+
+    .cta__buttons {
+        flex-direction: column;
+        gap: 1rem;
+    }
+} 

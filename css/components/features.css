@@ -1,0 +1,68 @@
+/* Características */
+.features {
+    padding: var(--section-spacing) 0;
+}
+
+.features__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.feature {
+    padding: var(--card-spacing);
+    text-align: center;
+    background: var(--bg-color);
+    border-radius: var(--border-radius);
+    transition: var(--transition);
+}
+
+.feature:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow);
+}
+
+.feature__icon-container {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--primary-color);
+    border-radius: 50%;
+    color: var(--light-color);
+}
+
+.feature__icon {
+    font-size: 2rem;
+}
+
+.feature__title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.feature__description {
+    color: var(--accent-color);
+}
+
+@media (max-width: 768px) {
+    .features__grid {
+        gap: 1.5rem;
+    }
+    
+    .feature {
+        padding: 1.5rem;
+    }
+    
+    .feature__icon-container {
+        width: 70px;
+        height: 70px;
+    }
+    
+    .feature__icon {
+        font-size: 1.75rem;
+    }
+} 

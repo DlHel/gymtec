@@ -1,0 +1,133 @@
+/* Service Detail Page */
+
+/* Service Content */
+.service-detail__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+.service-detail__text {
+    text-align: left;
+}
+
+.service-detail__text .section__title {
+    text-align: left;
+}
+
+.service-detail__text .section__title:after {
+    left: 0;
+    transform: none;
+}
+
+.service-detail__text p {
+    color: var(--accent-color);
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+}
+
+/* Service Gallery */
+.service-detail__gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.service-detail__gallery img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: var(--border-radius);
+    transition: var(--transition);
+}
+
+.service-detail__gallery img:hover {
+    transform: scale(1.05);
+}
+
+.service-detail__gallery img:first-child {
+    grid-column: span 2;
+    height: 300px;
+}
+
+/* Service Benefits */
+.benefits__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.benefit {
+    background: var(--light-color);
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    text-align: center;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+
+.benefit:hover {
+    transform: translateY(-5px);
+}
+
+.benefit__icon {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    background: rgba(255, 75, 43, 0.1);
+    width: 60px;
+    height: 60px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.benefit h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: var(--dark-color);
+}
+
+.benefit p {
+    color: var(--accent-color);
+    font-size: 0.95rem;
+}
+
+@media (max-width: 992px) {
+    .service-detail__content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .service-detail__text {
+        order: -1;
+    }
+
+    .service-detail__text .section__title {
+        text-align: center;
+    }
+
+    .service-detail__text .section__title:after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+@media (max-width: 768px) {
+    .service-detail__gallery img:first-child {
+        height: 200px;
+    }
+
+    .benefits__grid {
+        gap: 1.5rem;
+        margin-top: 2rem;
+    }
+
+    .benefit {
+        padding: 1.5rem;
+    }
+} 

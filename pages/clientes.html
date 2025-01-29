@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clientes | GYMTEC</title>
+    <title>Nuestros Clientes | GYMTEC</title>
     
     <!-- SEO Meta Tags -->
-    <meta name="description" content="Nuestros clientes satisfechos y casos de éxito">
-    <meta name="keywords" content="clientes gimnasio, casos éxito, testimonios">
+    <meta name="description" content="Más de 100 empresas confían en nuestro servicio técnico deportivo profesional">
+    <meta name="keywords" content="clientes gymtec, servicio técnico deportivo, mantenimiento gimnasios chile">
     
     <!-- Fuentes y Estilos -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,7 +15,6 @@
     <link href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="../css/styles.css">
-    <link rel="stylesheet" href="../css/pages/clientes.css">
 </head>
 <body>
     <!-- Header -->
@@ -30,19 +29,20 @@
                     <li class="nav__item"><a href="mantenimiento.html" class="nav__link">Mantenimiento</a></li>
                     <li class="nav__item"><a href="reparacion.html" class="nav__link">Reparación</a></li>
                     <li class="nav__item"><a href="instalacion.html" class="nav__link">Instalación</a></li>
+                    <li class="nav__item"><a href="marcas.html" class="nav__link">Marcas</a></li>
                     <li class="nav__item"><a href="otros-servicios.html" class="nav__link">Otros Servicios</a></li>
                     <li class="nav__item"><a href="clientes.html" class="nav__link active">Clientes</a></li>
                     <li class="nav__item"><a href="contacto.html" class="nav__link">Contacto</a></li>
                 </ul>
             </div>
-            <div class="nav__toggle">
+            <button class="nav__toggle">
                 <i class="fas fa-bars"></i>
-            </div>
+            </button>
         </nav>
     </header>
 
     <!-- Hero Section -->
-    <section class="page-hero clients-hero">
+    <section class="page-hero">
         <div class="page-hero__container container">
             <h1 class="page-hero__title">Nuestros Clientes</h1>
             <p class="page-hero__description">Más de 100 empresas confían en nuestra experiencia y profesionalismo</p>
@@ -50,258 +50,275 @@
     </section>
 
     <!-- Estadísticas -->
-    <section class="section stats">
+    <section class="stats section">
         <div class="container">
             <div class="stats__grid">
                 <div class="stat animate">
+                    <div class="stat__icon">
+                        <i class="fas fa-medal"></i>
+                    </div>
                     <div class="stat__number">+10</div>
                     <div class="stat__label">Años de Experiencia</div>
                 </div>
                 <div class="stat animate">
+                    <div class="stat__icon">
+                        <i class="fas fa-users"></i>
+                    </div>
                     <div class="stat__number">+100</div>
                     <div class="stat__label">Clientes Activos</div>
                 </div>
                 <div class="stat animate">
+                    <div class="stat__icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
                     <div class="stat__number">+1000</div>
                     <div class="stat__label">Servicios Realizados</div>
                 </div>
                 <div class="stat animate">
-                    <div class="stat__number">7</div>
-                    <div class="stat__label">Categorías de Clientes</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonios Destacados -->
-    <section class="section testimonials">
-        <div class="container">
-            <h2 class="section__title">Testimonios Destacados</h2>
-            <p class="section__subtitle">Lo que dicen nuestros clientes sobre nuestro servicio</p>
-            
-            <div class="testimonials__grid">
-                <div class="testimonial animate">
-                    <div class="testimonial__content">
-                        <i class="fas fa-quote-left testimonial__icon"></i>
-                        <p class="testimonial__text">
-                            "Excelente servicio técnico, siempre responden rápido y son muy profesionales. Recomendados al 100%."
-                        </p>
+                    <div class="stat__icon">
+                        <i class="fas fa-map-marked-alt"></i>
                     </div>
-                    <div class="testimonial__author">
-                        <img src="../img/clientes/gimnasios/sportlife.png" alt="Sportlife" class="testimonial__logo">
-                        <div class="testimonial__info">
-                            <h4>Sportlife</h4>
-                            <p>Cliente desde 2018</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="testimonial animate">
-                    <div class="testimonial__content">
-                        <i class="fas fa-quote-left testimonial__icon"></i>
-                        <p class="testimonial__text">
-                            "Gran equipo de trabajo, muy comprometidos con el servicio y la calidad."
-                        </p>
-                    </div>
-                    <div class="testimonial__author">
-                        <img src="../img/clientes/instituciones/udd.png" alt="Universidad del Desarrollo" class="testimonial__logo">
-                        <div class="testimonial__info">
-                            <h4>Universidad del Desarrollo</h4>
-                            <p>Cliente desde 2019</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="testimonial animate">
-                    <div class="testimonial__content">
-                        <i class="fas fa-quote-left testimonial__icon"></i>
-                        <p class="testimonial__text">
-                            "Servicio de primera calidad, personal técnico muy capacitado y excelente atención."
-                        </p>
-                    </div>
-                    <div class="testimonial__author">
-                        <img src="../img/clientes/empresas/entel.png" alt="Entel" class="testimonial__logo">
-                        <div class="testimonial__info">
-                            <h4>Entel</h4>
-                            <p>Cliente desde 2020</p>
-                        </div>
-                    </div>
+                    <div class="stat__number">100%</div>
+                    <div class="stat__label">Cobertura Nacional</div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Categorías de Clientes -->
-    <section class="section clients">
+    <section class="client-categories section">
         <div class="container">
-            <h2 class="section__title">Nuestros Clientes</h2>
-            <p class="section__subtitle">Empresas que confían en nuestro servicio</p>
-
-            <!-- Gimnasios/Gimnasios Boutique -->
-            <div class="clients__category animate">
-                <div class="clients__category-header">
-                    <div class="clients__category-icon">
-                        <i class="fas fa-dumbbell"></i>
-                    </div>
-                    <h3 class="clients__category-title">Gimnasios y Gimnasios Boutique</h3>
-                </div>
-                <div class="clients__grid">
-                    <div class="client">
-                        <img src="../img/clientes/gimnasios/motion.png" alt="Motion">
-                    </div>
-                    <div class="client"><img src="../img/clientes/gimnasios/sportlife.png" alt="Sportlife"></div>
-                    <div class="client"><img src="../img/clientes/gimnasios/energy.png" alt="Energy"></div>
-                    <div class="client"><img src="../img/clientes/gimnasios/dmoov.png" alt="Dmoov"></div>
-                    <div class="client"><img src="../img/clientes/gimnasios/forzamaestra.png" alt="Fuerza Maestra"></div>
-                    <div class="client"><img src="../img/clientes/gimnasios/upcenter.png" alt="Up Center"></div>
-                    <div class="client"><img src="../img/clientes/gimnasios/kinetic.png" alt="Kinetic"></div>
-                    <div class="client"><img src="../img/clientes/gimnasios/improv.png" alt="Improv"></div>
-                    <div class="client"><img src="../img/clientes/gimnasios/physica.png" alt="Physica"></div>
-                    <div class="client"><img src="../img/clientes/gimnasios/onfit.png" alt="OnFit"></div>
-                    <div class="client"><img src="../img/clientes/gimnasios/shockgravity.png" alt="Shock Gravity"></div>
-                    <div class="client"><img src="../img/clientes/gimnasios/row.png" alt="Row"></div>
-                    <div class="client"><img src="../img/clientes/gimnasios/virtualbike.png" alt="Virtual Bike"></div>
-                    <div class="client"><img src="../img/clientes/gimnasios/2008.png" alt="2008"></div>
-                </div>
+            <div class="client-categories__tabs">
+                <button class="tab-button active" data-category="all">Todos</button>
+                <button class="tab-button" data-category="gyms">Gimnasios</button>
+                <button class="tab-button" data-category="education">Educación</button>
+                <button class="tab-button" data-category="government">Instituciones</button>
+                <button class="tab-button" data-category="companies">Empresas</button>
             </div>
 
-            <!-- Instituciones -->
-            <div class="clients__category animate">
-                <div class="clients__category-header">
-                    <div class="clients__category-icon">
-                        <i class="fas fa-university"></i>
+            <div class="client-categories__grid">
+                <!-- Gimnasios -->
+                <div class="client-card animate" data-category="gyms">
+                    <div class="client-card__image-container">
+                        <img src="../img/clientes/sportlife.png" alt="Sportlife">
                     </div>
-                    <h3 class="clients__category-title">Instituciones</h3>
+                    <span>Sportlife</span>
                 </div>
-                <div class="clients__grid">
-                    <div class="client">
-                        <img src="../img/clientes/instituciones/ejercito.png" alt="Ejército">
+                <div class="client-card animate" data-category="gyms">
+                    <div class="client-card__image-container">
+                        <img src="../img/clientes/energy.png" alt="Energy">
                     </div>
-                    <div class="client"><img src="../img/clientes/instituciones/udd.png" alt="Universidad del Desarrollo"></div>
-                    <div class="client"><img src="../img/clientes/instituciones/duoc.png" alt="Duoc UC"></div>
-                    <div class="client"><img src="../img/clientes/instituciones/uss.png" alt="Universidad San Sebastián"></div>
-                    <div class="client"><img src="../img/clientes/instituciones/ua.png" alt="Universidad de Antofagasta"></div>
-                    <div class="client"><img src="../img/clientes/instituciones/armada.png" alt="Armada de Chile"></div>
-                    <div class="client"><img src="../img/clientes/instituciones/fach.png" alt="Fuerza Aérea de Chile"></div>
+                    <span>Energy</span>
                 </div>
-            </div>
+                <div class="client-card animate" data-category="gyms">
+                    <div class="client-card__image-container">
+                        <img src="../img/clientes/onfit.png" alt="OnFit">
+                    </div>
+                    <span>OnFit</span>
+                </div>
+                <div class="client-card animate" data-category="gyms">
+                    <div class="client-card__image-container">
+                        <img src="../img/clientes/syncronicity.png" alt="Syncronicity">
+                    </div>
+                    <span>Syncronicity</span>
+                </div>
+                <div class="client-card animate" data-category="gyms">
+                    <div class="client-card__image-container">
+                        <img src="../img/clientes/motion.png" alt="Motion">
+                    </div>
+                    <span>Motion</span>
+                </div>
+                <div class="client-card animate" data-category="gyms">
+                    <div class="client-card__image-container">
+                        <img src="../img/clientes/zoob performance club.jpg" alt="Zoob Performance Club">
+                    </div>
+                    <span>Zoob Performance Club</span>
+                </div>
+                <div class="client-card animate" data-category="gyms">
+                    <div class="client-card__image-container">
+                        <img src="../img/clientes/dmoov.png" alt="Dmoov">
+                    </div>
+                    <span>Dmoov</span>
+                </div>
+                <div class="client-card animate" data-category="gyms">
+                    <div class="client-card__image-container">
+                        <img src="../img/clientes/kft.png" alt="KFT">
+                    </div>
+                    <span>KFT</span>
+                </div>
+                <div class="client-card animate" data-category="gyms">
+                    <div class="client-card__image-container">
+                        <img src="../img/clientes/forza nostra.png" alt="Forza Nostra">
+                    </div>
+                    <span>Forza Nostra</span>
+                </div>
+                <div class="client-card animate" data-category="gyms">
+                    <div class="client-card__image-container">
+                        <img src="../img/clientes/ironside.jpg.png" alt="Ironside">
+                    </div>
+                    <span>Ironside</span>
+                </div>
 
-            <!-- Empresas -->
-            <div class="clients__category animate">
-                <div class="clients__category-header">
-                    <div class="clients__category-icon">
-                        <i class="fas fa-building"></i>
+                <!-- Educación -->
+                <div class="client-card animate" data-category="education">
+                    <div class="client-card__image-container">
+                        <img src="../img/clientes/duoc uc.png" alt="Duoc UC">
                     </div>
-                    <h3 class="clients__category-title">Empresas</h3>
+                    <span>Duoc UC</span>
                 </div>
-                <div class="clients__grid">
-                    <div class="client">
-                        <img src="../img/clientes/empresas/entel.png" alt="Entel">
+                <div class="client-card animate" data-category="education">
+                    <div class="client-card__image-container">
+                        <img src="../img/clientes/universidad de antofagasta.jpg.png" alt="Universidad de Antofagasta">
                     </div>
-                    <div class="client"><img src="../img/clientes/empresas/pelambres.png" alt="Los Pelambres"></div>
-                    <div class="client"><img src="../img/clientes/empresas/socovesa.png" alt="Socovesa"></div>
-                    <div class="client"><img src="../img/clientes/empresas/ferrovial.png" alt="Ferrovial"></div>
-                    <div class="client"><img src="../img/clientes/empresas/vallesalvado.png" alt="Valle Salvador"></div>
-                    <div class="client"><img src="../img/clientes/empresas/clubmedico.png" alt="Club Médico"></div>
-                    <div class="client"><img src="../img/clientes/empresas/fcrus.png" alt="FC Rus"></div>
-                    <div class="client"><img src="../img/clientes/empresas/parkplaza.png" alt="Park Plaza"></div>
+                    <span>Universidad de Antofagasta</span>
                 </div>
-            </div>
+                <div class="client-card animate" data-category="education">
+                    <div class="client-card__image-container">
+                        <img src="../img/clientes/udd.png" alt="Universidad del Desarrollo">
+                    </div>
+                    <span>Universidad del Desarrollo</span>
+                </div>
+                <div class="client-card animate" data-category="education">
+                    <div class="client-card__image-container">
+                        <img src="../img/clientes/u central.jpg.png" alt="Universidad Central">
+                    </div>
+                    <span>Universidad Central</span>
+                </div>
 
-            <!-- Centros Médicos -->
-            <div class="clients__category animate">
-                <div class="clients__category-header">
-                    <div class="clients__category-icon">
-                        <i class="fas fa-hospital"></i>
+                <!-- Instituciones -->
+                <div class="client-card animate" data-category="government">
+                    <div class="client-card__image-container">
+                        <img src="../img/clientes/ejercito de chile.png" alt="Ejército de Chile">
                     </div>
-                    <h3 class="clients__category-title">Centros Médicos</h3>
+                    <span>Ejército de Chile</span>
                 </div>
-                <div class="clients__grid">
-                    <div class="client">
-                        <img src="../img/clientes/centros-medicos/holistimed.png" alt="Holistimed">
+                <div class="client-card animate" data-category="government">
+                    <div class="client-card__image-container">
+                        <img src="../img/clientes/carabineros.png" alt="Carabineros de Chile">
                     </div>
-                    <div class="client"><img src="../img/clientes/centros-medicos/comillas.png" alt="Comillas"></div>
-                    <div class="client"><img src="../img/clientes/centros-medicos/ipro.png" alt="IPRO"></div>
-                    <div class="client"><img src="../img/clientes/centros-medicos/cefsalud.png" alt="CEF Salud"></div>
-                    <div class="client"><img src="../img/clientes/centros-medicos/promove.png" alt="Promove"></div>
-                    <div class="client"><img src="../img/clientes/centros-medicos/nanomed.png" alt="Nanomed"></div>
-                    <div class="client"><img src="../img/clientes/centros-medicos/csj.png" alt="CSJ"></div>
+                    <span>Carabineros de Chile</span>
                 </div>
-            </div>
+                <div class="client-card animate" data-category="government">
+                    <div class="client-card__image-container">
+                        <img src="../img/clientes/fach.png" alt="Fuerza Aérea de Chile">
+                    </div>
+                    <span>Fuerza Aérea de Chile</span>
+                </div>
+                <div class="client-card animate" data-category="government">
+                    <div class="client-card__image-container">
+                        <img src="../img/clientes/muni vitacura.png" alt="Municipalidad de Vitacura">
+                    </div>
+                    <span>Municipalidad de Vitacura</span>
+                </div>
+                <div class="client-card animate" data-category="government">
+                    <div class="client-card__image-container">
+                        <img src="../img/clientes/muni independencia.png" alt="Municipalidad de Independencia">
+                    </div>
+                    <span>Municipalidad de Independencia</span>
+                </div>
+                <div class="client-card animate" data-category="government">
+                    <div class="client-card__image-container">
+                        <img src="../img/clientes/muni quilicura.png" alt="Municipalidad de Quilicura">
+                    </div>
+                    <span>Municipalidad de Quilicura</span>
+                </div>
+                <div class="client-card animate" data-category="government">
+                    <div class="client-card__image-container">
+                        <img src="../img/clientes/muni ñuñoa.png" alt="Municipalidad de Ñuñoa">
+                    </div>
+                    <span>Municipalidad de Ñuñoa</span>
+                </div>
+                <div class="client-card animate" data-category="government">
+                    <div class="client-card__image-container">
+                        <img src="../img/clientes/muni colina.png" alt="Municipalidad de Colina">
+                    </div>
+                    <span>Municipalidad de Colina</span>
+                </div>
+                <div class="client-card animate" data-category="government">
+                    <div class="client-card__image-container">
+                        <img src="../img/clientes/muni cerro navia.jpg-1.png" alt="Municipalidad de Cerro Navia">
+                    </div>
+                    <span>Municipalidad de Cerro Navia</span>
+                </div>
+                <div class="client-card animate" data-category="government">
+                    <div class="client-card__image-container">
+                        <img src="../img/clientes/muni cunco.png" alt="Municipalidad de Cunco">
+                    </div>
+                    <span>Municipalidad de Cunco</span>
+                </div>
 
-            <!-- Crossfit/Entrenamiento Funcional -->
-            <div class="clients__category animate">
-                <div class="clients__category-header">
-                    <div class="clients__category-icon">
-                        <i class="fas fa-running"></i>
+                <!-- Empresas -->
+                <div class="client-card animate" data-category="companies">
+                    <div class="client-card__image-container">
+                        <img src="../img/clientes/ferrovial.png" alt="Ferrovial">
                     </div>
-                    <h3 class="clients__category-title">Crossfit/Entrenamiento Funcional</h3>
+                    <span>Ferrovial</span>
                 </div>
-                <div class="clients__grid">
-                    <div class="client">
-                        <img src="../img/clientes/crossfit/accion.png" alt="Acción">
+                <div class="client-card animate" data-category="companies">
+                    <div class="client-card__image-container">
+                        <img src="../img/clientes/valle nevado.jpg.png" alt="Valle Nevado">
                     </div>
-                    <div class="client"><img src="../img/clientes/crossfit/crossfitlareina.png" alt="Crossfit La Reina"></div>
-                    <div class="client"><img src="../img/clientes/crossfit/katsu.png" alt="Katsu"></div>
-                    <div class="client"><img src="../img/clientes/crossfit/puraenergia.png" alt="Pura Energía"></div>
-                    <div class="client"><img src="../img/clientes/crossfit/monkey.png" alt="Monkey"></div>
-                    <div class="client"><img src="../img/clientes/crossfit/manuelgym.png" alt="Manuel Gym"></div>
-                    <div class="client"><img src="../img/clientes/crossfit/nirvana.png" alt="Nirvana"></div>
+                    <span>Valle Nevado</span>
                 </div>
-            </div>
-
-            <!-- Colaboraciones y Post Venta -->
-            <div class="clients__category animate">
-                <div class="clients__category-header">
-                    <div class="clients__category-icon">
-                        <i class="fas fa-handshake"></i>
+                <div class="client-card animate" data-category="companies">
+                    <div class="client-card__image-container">
+                        <img src="../img/clientes/los pelambres.png" alt="Los Pelambres">
                     </div>
-                    <h3 class="clients__category-title">Colaboraciones y Post Venta</h3>
+                    <span>Los Pelambres</span>
                 </div>
-                <div class="clients__grid">
-                    <div class="client">
-                        <img src="../img/clientes/colaboraciones/ilus.png" alt="Ilus">
+                <div class="client-card animate" data-category="companies">
+                    <div class="client-card__image-container">
+                        <img src="../img/clientes/socovesa.jpg.png" alt="Socovesa">
                     </div>
-                    <div class="client"><img src="../img/clientes/colaboraciones/ironside.png" alt="Ironside"></div>
-                    <div class="client"><img src="../img/clientes/colaboraciones/equipamientofitness.png" alt="Equipamiento Fitness"></div>
-                    <div class="client"><img src="../img/clientes/colaboraciones/sd.png" alt="SD"></div>
-                    <div class="client"><img src="../img/clientes/colaboraciones/equipamientoschile.png" alt="Equipamientos Chile"></div>
-                    <div class="client"><img src="../img/clientes/colaboraciones/fitnesssolutions.png" alt="Fitness Solutions"></div>
-                    <div class="client"><img src="../img/clientes/colaboraciones/energym.png" alt="Energym"></div>
-                    <div class="client"><img src="../img/clientes/colaboraciones/artsfitness.png" alt="Art's Fitness"></div>
-                    <div class="client"><img src="../img/clientes/colaboraciones/sportshealth.png" alt="Sports Health"></div>
-                    <div class="client"><img src="../img/clientes/colaboraciones/choice.png" alt="Choice"></div>
-                    <div class="client"><img src="../img/clientes/colaboraciones/bicisport.png" alt="Bici Sport"></div>
-                    <div class="client"><img src="../img/clientes/colaboraciones/youtrain.png" alt="YouTrain"></div>
-                    <div class="client"><img src="../img/clientes/colaboraciones/abechile.png" alt="ABE Chile"></div>
-                    <div class="client"><img src="../img/clientes/colaboraciones/wellcross.png" alt="Wellcross"></div>
+                    <span>Socovesa</span>
                 </div>
-            </div>
-
-            <!-- Municipalidades -->
-            <div class="clients__category animate">
-                <div class="clients__category-header">
-                    <div class="clients__category-icon">
-                        <i class="fas fa-city"></i>
+                <div class="client-card animate" data-category="companies">
+                    <div class="client-card__image-container">
+                        <img src="../img/clientes/equipamientos chile.jpg.png" alt="Equipamientos Chile">
                     </div>
-                    <h3 class="clients__category-title">Municipalidades</h3>
-                </div>
-                <div class="clients__grid">
-                    <div class="client">
-                        <img src="../img/clientes/municipalidades/colina.png" alt="Municipalidad de Colina">
-                    </div>
-                    <div class="client"><img src="../img/clientes/municipalidades/cerronavia.png" alt="Municipalidad de Cerro Navia"></div>
-                    <div class="client"><img src="../img/clientes/municipalidades/independencia.png" alt="Municipalidad de Independencia"></div>
-                    <div class="client"><img src="../img/clientes/municipalidades/quilicura.png" alt="Municipalidad de Quilicura"></div>
-                    <div class="client"><img src="../img/clientes/municipalidades/nunoa.png" alt="Municipalidad de Ñuñoa"></div>
-                    <div class="client"><img src="../img/clientes/municipalidades/vitacura.png" alt="Municipalidad de Vitacura"></div>
+                    <span>Equipamientos Chile</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- CTA -->
-    <section class="section cta">
+    <!-- Testimonios -->
+    <section class="testimonials section">
+        <div class="container">
+            <h2 class="section__title">Lo que dicen nuestros clientes</h2>
+            <div class="testimonials__grid">
+                <div class="testimonial animate">
+                    <div class="testimonial__content">
+                        <i class="fas fa-quote-left"></i>
+                        <p>"Excelente servicio técnico, siempre responden rápido y son muy profesionales."</p>
+                        <div class="testimonial__author">
+                            <img src="../img/clientes/sportlife.png" alt="Sportlife">
+                            <div>
+                                <h4>Sportlife</h4>
+                                <span>Cliente desde 2018</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial animate">
+                    <div class="testimonial__content">
+                        <i class="fas fa-quote-left"></i>
+                        <p>"Servicio confiable y de calidad. Personal altamente capacitado."</p>
+                        <div class="testimonial__author">
+                            <img src="../img/clientes/duoc uc.png" alt="Duoc UC">
+                            <div>
+                                <h4>Duoc UC</h4>
+                                <span>Cliente desde 2019</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta section">
         <div class="container">
             <div class="cta__content animate">
                 <h2>¿Quieres ser parte de nuestros clientes?</h2>
@@ -321,18 +338,34 @@
         <div class="container">
             <div class="footer__content">
                 <div class="footer__info">
-                    <img src="../img/logo/logo.png" alt="GYMTEC" class="footer__logo">
-                    <p>Sociedad Pastrian Hidalgo Servicios SpA</p>
-                    <p>RUT: 77.009.452-6</p>
+                    <img src="../img/logo/logo.png" alt="Logo GYMTEC" class="footer__logo">
+                    <div class="footer__contact">
+                        <div class="footer__contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+56 9 7275 8330</span>
+                        </div>
+                        <div class="footer__contact-item">
+                            <i class="fas fa-clock"></i>
+                            <span>Lunes a Viernes: 9:00 - 18:00</span>
+                        </div>
+                        <div class="footer__contact-item">
+                            <i class="fas fa-building"></i>
+                            <span>Sociedad Pastrian Hidalgo Servicios SpA</span>
+                        </div>
+                        <div class="footer__contact-item">
+                            <i class="fas fa-id-card"></i>
+                            <span>RUT: 77.009.452-6</span>
+                        </div>
+                    </div>
                 </div>
                 <div class="footer__social">
-                    <a href="https://wa.me/56972758330" class="footer__social-link" target="_blank" aria-label="WhatsApp">
+                    <a href="https://wa.me/56972758330" class="footer__social-link" target="_blank" rel="noopener">
                         <i class="fab fa-whatsapp"></i>
                     </a>
-                    <a href="https://www.instagram.com/gymtec.cl/" class="footer__social-link" target="_blank" aria-label="Instagram">
+                    <a href="https://www.instagram.com/gymtec.cl/" class="footer__social-link" target="_blank" rel="noopener">
                         <i class="fab fa-instagram"></i>
                     </a>
-                    <a href="https://www.facebook.com/gymtec.cl" class="footer__social-link" target="_blank" aria-label="Facebook">
+                    <a href="https://www.facebook.com/gymtec.cl" class="footer__social-link" target="_blank" rel="noopener">
                         <i class="fab fa-facebook-f"></i>
                     </a>
                 </div>
@@ -341,7 +374,31 @@
         </div>
     </footer>
 
+    <!-- Scripts -->
     <script src="../js/main.js"></script>
-    <script src="../js/pages/clientes.js"></script>
+    <script>
+        // Filtrado de clientes
+        const tabButtons = document.querySelectorAll('.tab-button');
+        const clientCards = document.querySelectorAll('.client-card');
+
+        tabButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Remover clase active de todos los botones
+                tabButtons.forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
+
+                const category = button.dataset.category;
+
+                // Mostrar/ocultar tarjetas según la categoría
+                clientCards.forEach(card => {
+                    if (category === 'all' || card.dataset.category === category) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 </html> 

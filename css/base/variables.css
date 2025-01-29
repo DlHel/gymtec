@@ -1,0 +1,52 @@
+/* Variables */
+:root {
+    /* Colores */
+    --primary-color: #FF4B2B;
+    --primary-light: rgba(255, 75, 43, 0.1);
+    --primary-dark: #E63E1F;
+    
+    --secondary-color: #2B2D42;
+    --accent-color: #8D99AE;
+    
+    --light-color: #FFFFFF;
+    --dark-color: #1A1B26;
+    --bg-color: #F5F5F7;
+    
+    /* Efectos */
+    --transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.05);
+    --shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+    --shadow-lg: 0 15px 35px rgba(0, 0, 0, 0.1);
+    
+    /* Layout */
+    --container-width: 1200px;
+    --header-height: 70px;
+    --section-spacing: 6rem;
+    --card-spacing: 2.5rem;
+    
+    /* Bordes */
+    --border-radius-sm: 12px;
+    --border-radius: 20px;
+    --border-radius-lg: 30px;
+    
+    /* Tipografía */
+    --font-size-xs: 0.85rem;
+    --font-size-sm: 0.95rem;
+    --font-size-base: 1rem;
+    --font-size-lg: 1.25rem;
+    --font-size-xl: 1.5rem;
+    --font-size-2xl: 2rem;
+    --font-size-3xl: 2.5rem;
+    
+    /* Iconos */
+    --icon-size-sm: 1.25rem;
+    --icon-size-base: 1.5rem;
+    --icon-size-lg: 2rem;
+    --icon-size-xl: 2.5rem;
+    
+    /* Z-index */
+    --z-dropdown: 100;
+    --z-sticky: 200;
+    --z-fixed: 300;
+    --z-modal: 1000;
+} 

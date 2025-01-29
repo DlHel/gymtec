@@ -30,6 +30,7 @@
                     <li class="nav__item"><a href="mantenimiento.html" class="nav__link">Mantenimiento</a></li>
                     <li class="nav__item"><a href="reparacion.html" class="nav__link">Reparación</a></li>
                     <li class="nav__item"><a href="instalacion.html" class="nav__link">Instalación</a></li>
+                    <li class="nav__item"><a href="marcas.html" class="nav__link">Marcas</a></li>
                     <li class="nav__item"><a href="otros-servicios.html" class="nav__link">Otros Servicios</a></li>
                     <li class="nav__item"><a href="clientes.html" class="nav__link">Clientes</a></li>
                     <li class="nav__item"><a href="contacto.html" class="nav__link active">Contacto</a></li>
@@ -42,65 +43,77 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="page-hero contact-hero">
-        <div class="page-hero__container container">
-            <h1 class="page-hero__title">Contacto</h1>
-            <p class="page-hero__description">Estamos aquí para ayudarte. Contáctanos y te responderemos a la brevedad.</p>
-        </div>
-    </section>
-
-    <!-- Información de Contacto -->
-    <section class="section contact-info">
+    <section class="contact-hero">
         <div class="container">
-            <div class="contact-info__grid">
-                <div class="contact-info__card animate">
-                    <div class="contact-info__icon-container">
-                        <i class="fas fa-phone-alt"></i>
-                    </div>
-                    <h3>Llámanos</h3>
-                    <p>+56 9 7275 8330</p>
-                    <a href="tel:+56972758330" class="contact-info__action">
-                        Llamar ahora
+            <div class="contact-hero__content">
+                <h1 class="contact-hero__title">¿Necesitas ayuda con tus equipos?</h1>
+                <p class="contact-hero__description">Estamos aquí para ayudarte. Nuestro equipo de expertos está listo para atender tus necesidades.</p>
+                <div class="contact-hero__buttons">
+                    <a href="#contactForm" class="button button--primary">
+                        <i class="fas fa-envelope"></i> Enviar mensaje
                     </a>
-                </div>
-
-                <div class="contact-info__card animate">
-                    <div class="contact-info__icon-container">
-                        <i class="fab fa-whatsapp"></i>
-                    </div>
-                    <h3>WhatsApp</h3>
-                    <p>Escríbenos por WhatsApp</p>
-                    <a href="https://wa.me/56972758330" class="contact-info__action" target="_blank">
-                        Enviar mensaje
-                    </a>
-                </div>
-
-                <div class="contact-info__card animate">
-                    <div class="contact-info__icon-container">
-                        <i class="fas fa-envelope"></i>
-                    </div>
-                    <h3>Email</h3>
-                    <p>contacto@gymtec.cl</p>
-                    <a href="mailto:contacto@gymtec.cl" class="contact-info__action">
-                        Enviar email
+                    <a href="https://wa.me/56972758330" class="button button--outline" target="_blank">
+                        <i class="fab fa-whatsapp"></i> WhatsApp
                     </a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Formulario y Mapa -->
-    <section class="section contact-main">
+    <!-- Información de Contacto -->
+    <section class="contact-info">
         <div class="container">
-            <div class="contact-main__grid">
-                <!-- Formulario -->
-                <div class="contact-form animate">
-                    <div class="contact-form__header">
-                        <h2>Envíanos un mensaje</h2>
-                        <p>Completa el formulario y nos pondremos en contacto contigo</p>
+            <div class="contact-info__grid">
+                <div class="contact-info__card animate">
+                    <div class="contact-info__icon">
+                        <i class="fas fa-phone-alt"></i>
                     </div>
-                    
-                    <form id="contactForm" class="contact-form__content">
+                    <h3>Llámanos</h3>
+                    <p>Atención inmediata</p>
+                    <a href="tel:+56972758330" class="contact-info__link">+56 9 7275 8330</a>
+                </div>
+
+                <div class="contact-info__card animate">
+                    <div class="contact-info__icon">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <h3>WhatsApp</h3>
+                    <p>Respuesta rápida</p>
+                    <a href="https://wa.me/56972758330" class="contact-info__link" target="_blank">Enviar mensaje</a>
+                </div>
+
+                <div class="contact-info__card animate">
+                    <div class="contact-info__icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email</h3>
+                    <p>Consultas detalladas</p>
+                    <a href="mailto:contacto@gymtec.cl" class="contact-info__link">contacto@gymtec.cl</a>
+                </div>
+
+                <div class="contact-info__card animate">
+                    <div class="contact-info__icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Horario</h3>
+                    <p>Lun - Vie: 9:00 - 18:00</p>
+                    <p class="contact-info__subtext">Sáb: 9:00 - 14:00</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulario de Contacto -->
+    <section class="contact-form" id="contactForm">
+        <div class="container">
+            <div class="contact-form__grid">
+                <!-- Formulario -->
+                <div class="contact-form__content">
+                    <div class="contact-form__header">
+                        <h2>Envíanos tu consulta</h2>
+                        <p>Completa el formulario y te responderemos a la brevedad</p>
+                    </div>
+                    <form class="contact-form__form">
                         <div class="form-group">
                             <label for="nombre">Nombre completo</label>
                             <input type="text" id="nombre" name="nombre" required>
@@ -137,34 +150,22 @@
                         </button>
                     </form>
                 </div>
-
-                <!-- Información y Mapa -->
-                <div class="contact-info-map animate">
-                    <div class="contact-info-map__content">
-                        <h3>Nuestra Ubicación</h3>
-                        <p><i class="fas fa-map-marker-alt"></i> Av. Lo Campino #545, Quilicura, Santiago</p>
-                        <div class="contact-info-map__details">
-                            <div class="contact-info-map__item">
-                                <h4>Horario de Atención</h4>
-                                <p><i class="far fa-clock"></i> Lunes a Viernes: 9:00 - 18:00</p>
-                                <p><i class="far fa-clock"></i> Sábado: 9:00 - 14:00</p>
-                            </div>
-                            <div class="contact-info-map__item">
-                                <h4>Información Legal</h4>
-                                <p><i class="fas fa-building"></i> Sociedad Pastrian Hidalgo Servicios SpA</p>
-                                <p><i class="fas fa-id-card"></i> RUT: 77.009.452-6</p>
-                            </div>
+                
+                <!-- Panel Lateral -->
+                <div class="contact-form__info">
+                    <div class="contact-form__info-content">
+                        <h3>¿Por qué elegirnos?</h3>
+                        <ul class="contact-form__features">
+                            <li><i class="fas fa-check-circle"></i><span>Más de 10 años de experiencia</span></li>
+                            <li><i class="fas fa-check-circle"></i><span>Técnicos certificados</span></li>
+                            <li><i class="fas fa-check-circle"></i><span>Atención personalizada</span></li>
+                            <li><i class="fas fa-check-circle"></i><span>Respuesta rápida</span></li>
+                        </ul>
+                        <div class="contact-form__company">
+                            <h4>Información Legal</h4>
+                            <p><i class="fas fa-building"></i>Sociedad Pastrian Hidalgo Servicios SpA</p>
+                            <p><i class="fas fa-id-card"></i>RUT: 77.009.452-6</p>
                         </div>
-                    </div>
-                    <div class="contact-info-map__map">
-                        <iframe 
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3331.7307497822397!2d-70.7242799!3d-33.3785799!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c0d0b9a1a001%3A0x1a9c7f6e78d0b3a!2sAv.%20Lo%20Campino%20545%2C%20Quilicura%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses!2scl!4v1647289847693!5m2!1ses!2scl"
-                            width="100%" 
-                            height="100%" 
-                            style="border:0;" 
-                            allowfullscreen="" 
-                            loading="lazy">
-                        </iframe>
                     </div>
                 </div>
             </div>

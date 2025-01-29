@@ -1,0 +1,28 @@
+/* Breakpoints */
+:root {
+    --breakpoint-sm: 480px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+}
+
+/* Media Query Templates */
+@custom-media --mobile (max-width: 480px);
+@custom-media --tablet (max-width: 768px);
+@custom-media --laptop (max-width: 992px);
+@custom-media --desktop (max-width: 1200px);
+
+/* Responsive Font Sizes */
+:root {
+    --responsive-h1: clamp(2rem, 4vw, 3.5rem);
+    --responsive-h2: clamp(1.75rem, 3vw, 2.5rem);
+    --responsive-h3: clamp(1.5rem, 2.5vw, 2rem);
+    --responsive-text: clamp(0.9rem, 1.5vw, 1rem);
+}
+
+/* Responsive Spacing */
+:root {
+    --responsive-spacing: clamp(1rem, 3vw, 2rem);
+    --responsive-gap: clamp(1rem, 2vw, 2rem);
+    --responsive-padding: clamp(1.5rem, 4vw, 3rem);
+} 

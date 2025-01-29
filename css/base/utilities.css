@@ -1,0 +1,93 @@
+/* Utilidades */
+
+/* Contenedores */
+.container {
+    width: min(90%, var(--container-width));
+    margin: 0 auto;
+}
+
+/* Flexbox */
+.flex {
+    display: flex;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Grid */
+.grid {
+    display: grid;
+}
+
+.grid-center {
+    place-items: center;
+}
+
+/* Espaciado */
+.gap-1 { gap: 1rem; }
+.gap-2 { gap: 2rem; }
+.gap-3 { gap: 3rem; }
+.gap-4 { gap: 4rem; }
+
+.mb-1 { margin-bottom: 1rem; }
+.mb-2 { margin-bottom: 2rem; }
+.mb-3 { margin-bottom: 3rem; }
+.mb-4 { margin-bottom: 4rem; }
+
+/* Texto */
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+
+/* Visibilidad */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* Efectos */
+.hover-lift {
+    transition: var(--transition);
+}
+
+.hover-lift:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow);
+}
+
+.hover-scale {
+    transition: var(--transition);
+}
+
+.hover-scale:hover {
+    transform: scale(1.05);
+}
+
+/* Fondos y Bordes */
+.bg-light { background-color: var(--light-color); }
+.bg-dark { background-color: var(--dark-color); }
+.bg-primary { background-color: var(--primary-color); }
+
+.rounded { border-radius: var(--border-radius); }
+.shadow { box-shadow: var(--shadow); } 
