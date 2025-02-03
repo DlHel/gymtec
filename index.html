@@ -100,43 +100,44 @@
     <!-- Características Principales -->
     <section class="features section" role="region" aria-labelledby="features-title">
         <div class="container">
-            <h2 id="features-title" class="section__title visually-hidden">Características Principales</h2>
             <div class="service-features__grid">
-                <div class="service-feature animate" role="article">
-                    <div class="service-feature__icon">
-                        <i class="fas fa-medal"></i>
-                    </div>
-                    <div class="service-feature__content">
-                        <h3>+10 Años de Experiencia</h3>
-                        <p>Respaldados por una década de servicio técnico profesional</p>
-                    </div>
+                <div class="service-feature animate">
+                    <i class="fas fa-medal service-feature__icon"></i>
+                    <h3>+10 Años de Experiencia</h3>
+                    <p>Respaldados por una década de servicio técnico profesional</p>
                 </div>
                 <div class="service-feature animate">
-                    <div class="service-feature__icon">
-                        <i class="fas fa-tools"></i>
-                    </div>
-                    <div class="service-feature__content">
-                        <h3>Servicio Integral</h3>
-                        <p>Mantenimiento, reparación e instalación de equipos deportivos</p>
-                    </div>
+                    <i class="fas fa-tools service-feature__icon"></i>
+                    <h3>Servicio Integral</h3>
+                    <p>Mantenimiento, reparación e instalación de equipos deportivos</p>
                 </div>
                 <div class="service-feature animate">
-                    <div class="service-feature__icon">
-                        <i class="fas fa-check-circle"></i>
-                    </div>
-                    <div class="service-feature__content">
-                        <h3>Técnicos Certificados</h3>
-                        <p>Personal altamente capacitado y certificado por las principales marcas</p>
-                    </div>
+                    <i class="fas fa-check-circle service-feature__icon"></i>
+                    <h3>Técnicos Certificados</h3>
+                    <p>Personal altamente capacitado y certificado por las principales marcas</p>
                 </div>
                 <div class="service-feature animate">
-                    <div class="service-feature__icon">
-                        <i class="fas fa-truck"></i>
-                    </div>
-                    <div class="service-feature__content">
-                        <h3>Cobertura Nacional</h3>
-                        <p>Servicio disponible en todo Chile</p>
-                    </div>
+                    <i class="fas fa-truck service-feature__icon"></i>
+                    <h3>Cobertura Nacional</h3>
+                    <p>Servicio disponible en todo Chile</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quiénes Somos -->
+    <section class="about-us section" role="region" aria-labelledby="about-us-title">
+        <div class="container">
+            <h2 id="about-us-title" class="section__title">Quiénes Somos</h2>
+            <p class="section__subtitle">Conoce al equipo detrás de GYMTEC</p>
+            
+            <div class="about-us__content">
+                <div class="about-us__text animate">
+                    <p>Somos un equipo de profesionales apasionados por el mantenimiento y servicio técnico de equipamiento deportivo. Con más de una década de experiencia, nos hemos especializado en brindar soluciones integrales para gimnasios y centros deportivos en todo Chile.</p>
+                    <p>Nuestro compromiso es garantizar el óptimo funcionamiento de tus equipos, maximizando su vida útil y asegurando la mejor experiencia para tus usuarios.</p>
+                </div>
+                <div class="about-us__image animate">
+                    <img src="img/Quinessomos/QuinesSomos.JPG" alt="Equipo GYMTEC" class="about-us__img">
                 </div>
             </div>
         </div>
@@ -186,105 +187,46 @@
     </section>
 
     <!-- Otros Servicios -->
-    <section class="other-services section" role="region" aria-labelledby="other-services-title">
+    <section class="other-services section">
         <div class="container">
-            <h2 id="other-services-title" class="section__title">Otros Servicios</h2>
+            <h2 class="section__title">Otros Servicios</h2>
             <p class="section__subtitle">Soluciones especializadas para todas tus necesidades</p>
-            <div class="highlights__grid">
-                <article class="highlight animate">
-                    <div class="highlight__image-container">
-                        <img src="img/otros-servicios/tapiceria.jpg" 
-                             alt="Servicio de tapicería para equipos deportivos" 
-                             class="highlight__img"
-                             width="400"
-                             height="300"
-                             loading="lazy">
-                    </div>
-                    <div class="highlight__content">
-                        <h3 class="highlight__title">
-                            <i class="fas fa-couch"></i>
-                            Tapicería
-                        </h3>
-                        <p class="highlight__description">Servicio profesional de retapizado con espuma de alta densidad. Renovamos el aspecto y comodidad de tus equipos con cambios de color y materiales de primera calidad.</p>
-                        <a href="pages/otros-servicios.html#tapiceria" class="button button--outline">Ver más</a>
-                    </div>
-                </article>
+            
+            <div class="other-services__grid">
+                <div class="other-service animate">
+                    <i class="fas fa-couch other-service__icon"></i>
+                    <h3 class="other-service__title">Tapicería</h3>
+                    <p class="other-service__description">Servicio profesional de retapizado con espuma de alta densidad. Renovamos el aspecto y comodidad de tus equipos con cambios de color y materiales de primera calidad.</p>
+                    <a href="pages/otros-servicios.html#tapiceria" class="button button--outline">Ver más</a>
+                </div>
 
-                <article class="highlight animate">
-                    <div class="highlight__image-container">
-                        <img src="img/otros-servicios/torneria.jpg" 
-                             alt="Servicio de tornería de precisión" 
-                             class="highlight__img"
-                             width="400"
-                             height="300"
-                             loading="lazy">
-                    </div>
-                    <div class="highlight__content">
-                        <h3 class="highlight__title">
-                            <i class="fas fa-cog"></i>
-                            Tornería
-                        </h3>
-                        <p class="highlight__description">Fabricación especializada de piezas a medida: bujes, espaciadores, perillas, ejes, roscas, bielas y más. Soluciones precisas para cada necesidad.</p>
-                        <a href="pages/otros-servicios.html#torneria" class="button button--outline">Ver más</a>
-                    </div>
-                </article>
+                <div class="other-service animate">
+                    <i class="fas fa-cogs other-service__icon"></i>
+                    <h3 class="other-service__title">Tornería</h3>
+                    <p class="other-service__description">Fabricación especializada de piezas a medida: bujes, espaciadores, perillas, ejes, roscas, bielas y más. Soluciones precisas para cada necesidad.</p>
+                    <a href="pages/otros-servicios.html#torneria" class="button button--outline">Ver más</a>
+                </div>
 
-                <article class="highlight animate">
-                    <div class="highlight__image-container">
-                        <img src="img/otros-servicios/cables.jpg" 
-                             alt="Cables y piolas de alta calidad" 
-                             class="highlight__img"
-                             width="400"
-                             height="300"
-                             loading="lazy">
-                    </div>
-                    <div class="highlight__content">
-                        <h3 class="highlight__title">
-                            <i class="fas fa-link"></i>
-                            Cable o Piola de Carga
-                        </h3>
-                        <p class="highlight__description">Importadores directos de cable de alto tráfico diseñado específicamente para máquinas de musculación. Garantizamos durabilidad y rendimiento.</p>
-                        <a href="pages/otros-servicios.html#cables" class="button button--outline">Ver más</a>
-                    </div>
-                </article>
+                <div class="other-service animate">
+                    <i class="fas fa-link other-service__icon"></i>
+                    <h3 class="other-service__title">Cable o Piola de Carga</h3>
+                    <p class="other-service__description">Importadores directos de cable de alto tráfico diseñado específicamente para máquinas de musculación. Garantizamos durabilidad y rendimiento.</p>
+                    <a href="pages/otros-servicios.html#cables" class="button button--outline">Ver más</a>
+                </div>
 
-                <article class="highlight animate">
-                    <div class="highlight__image-container">
-                        <img src="img/otros-servicios/tablas.jpg" 
-                             alt="Fabricación de tablas para trotadoras" 
-                             class="highlight__img"
-                             width="400"
-                             height="300"
-                             loading="lazy">
-                    </div>
-                    <div class="highlight__content">
-                        <h3 class="highlight__title">
-                            <i class="fas fa-running"></i>
-                            Fabricación de Tablas
-                        </h3>
-                        <p class="highlight__description">Fabricantes especializados en tablas para trotadoras con servicio de envío a todo Chile. Calidad y durabilidad garantizada.</p>
-                        <a href="pages/otros-servicios.html#tablas" class="button button--outline">Ver más</a>
-                    </div>
-                </article>
+                <div class="other-service animate">
+                    <i class="fas fa-running other-service__icon"></i>
+                    <h3 class="other-service__title">Fabricación de Tablas</h3>
+                    <p class="other-service__description">Fabricantes especializados en tablas para trotadoras con servicio de envío a todo Chile. Calidad y durabilidad garantizada.</p>
+                    <a href="pages/otros-servicios.html#tablas" class="button button--outline">Ver más</a>
+                </div>
 
-                <article class="highlight animate">
-                    <div class="highlight__image-container">
-                        <img src="img/otros-servicios/repuestos.jpg" 
-                             alt="Importación de repuestos deportivos" 
-                             class="highlight__img"
-                             width="400"
-                             height="300"
-                             loading="lazy">
-                    </div>
-                    <div class="highlight__content">
-                        <h3 class="highlight__title">
-                            <i class="fas fa-shipping-fast"></i>
-                            Importación de Repuestos
-                        </h3>
-                        <p class="highlight__description">Servicio personalizado de importación de repuestos desde USA según los requerimientos específicos de cada cliente. Soluciones a medida para tu gimnasio.</p>
-                        <a href="pages/otros-servicios.html#repuestos" class="button button--outline">Ver más</a>
-                    </div>
-                </article>
+                <div class="other-service animate">
+                    <i class="fas fa-shipping-fast other-service__icon"></i>
+                    <h3 class="other-service__title">Importación de Repuestos</h3>
+                    <p class="other-service__description">Servicio personalizado de importación de repuestos desde USA según los requerimientos específicos de cada cliente.</p>
+                    <a href="pages/otros-servicios.html#repuestos" class="button button--outline">Ver más</a>
+                </div>
             </div>
         </div>
     </section>

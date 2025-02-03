@@ -3,25 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mantenimiento | GYMTEC</title>
+    <title>Mantenimiento de Equipos | GYMTEC</title>
     
     <!-- SEO Meta Tags -->
-    <meta name="description" content="Servicio de mantenimiento preventivo y correctivo para equipamiento deportivo profesional">
-    <meta name="keywords" content="mantenimiento gimnasio, mantenimiento equipos deportivos, mantenimiento preventivo">
+    <meta name="description" content="Servicio de mantenimiento preventivo y correctivo para equipos de gimnasio. Expertos certificados en todas las marcas.">
+    <meta name="keywords" content="mantenimiento gimnasio, mantenimiento equipos deportivos, servicio técnico deportivo, GYMTEC Chile">
     
-    <!-- Fuentes y Estilos -->
+    <!-- Preconnect y Prefetch -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    
+    <!-- Fuentes y Estilos -->
     <link href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
     <!-- Header -->
-    <header class="header">
+    <header class="header" role="banner">
         <nav class="nav container">
             <a href="../index.html" class="nav__logo">
-                <img src="../img/logo/logo.png" alt="GYMTEC">
+                <img src="../img/logo/logo.png" alt="Logo GYMTEC" width="150" height="50">
             </a>
             <div class="nav__menu">
                 <ul class="nav__list">
@@ -35,17 +38,17 @@
                     <li class="nav__item"><a href="contacto.html" class="nav__link">Contacto</a></li>
                 </ul>
             </div>
-            <div class="nav__toggle">
+            <button class="nav__toggle" aria-label="Menú de navegación">
                 <i class="fas fa-bars"></i>
-            </div>
+            </button>
         </nav>
     </header>
 
     <!-- Hero Section -->
     <section class="page-hero">
-        <div class="page-hero__container container">
-            <h1 class="page-hero__title">Mantenimiento Preventivo y Correctivo</h1>
-            <p class="page-hero__description">Cuidamos tu inversión con servicios de mantenimiento especializados</p>
+        <div class="container">
+            <h1 class="page-hero__title">Servicio de Mantenimiento</h1>
+            <p class="page-hero__description">Mantenimiento preventivo y correctivo para equipos cardiovasculares y de musculación</p>
         </div>
     </section>
 
@@ -53,81 +56,98 @@
     <section class="service-detail section">
         <div class="container">
             <div class="service-detail__content">
-                <div class="service-detail__text">
-                    <h2 class="section__title">¿Por qué elegir nuestro servicio?</h2>
-                    <p>Un mantenimiento adecuado no solo prolonga la vida útil de tus equipos, sino que también garantiza la seguridad de los usuarios y su rendimiento óptimo. En GYMTEC, brindamos soluciones completas y personalizadas para cuidar cada detalle de tus máquinas.</p>
+                <div class="service-detail__text animate">
+                    <h2 class="section__title">Mantenimiento Profesional</h2>
+                    <p>En GYMTEC nos especializamos en el mantenimiento integral de equipos deportivos, garantizando su óptimo funcionamiento y prolongando su vida útil. Nuestro equipo de técnicos certificados realiza:</p>
+                    <ul class="service-detail__list">
+                        <li>Mantenimiento preventivo programado</li>
+                        <li>Diagnóstico y evaluación completa</li>
+                        <li>Limpieza y lubricación de componentes</li>
+                        <li>Ajuste y calibración de sistemas</li>
+                        <li>Verificación de seguridad</li>
+                    </ul>
                 </div>
-                <div class="service-detail__gallery">
-                    <img src="../img/Mantenimiento/67cdc737-503f-4d04-b420-4fffec761623.jpg" alt="Mantenimiento 1">
-                    <img src="../img/Mantenimiento/22ab62b9-47e5-429e-bfff-5eb69d4de037.jpg" alt="Mantenimiento 2">
-                    <img src="../img/Mantenimiento/ff8eed10-4232-44dc-ae1d-506f1d0a0fcd.jpg" alt="Mantenimiento 3">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Servicios Incluidos -->
-    <section class="service-features section">
-        <div class="container">
-            <h2 class="section__title">Servicios Incluidos</h2>
-            <div class="service-features__grid">
-                <div class="service-feature animate">
-                    <i class="fas fa-broom service-feature__icon"></i>
-                    <h3>Limpieza Exhaustiva</h3>
-                    <p>Interna y externa, eliminando residuos que puedan afectar el desempeño</p>
-                </div>
-                <div class="service-feature animate">
-                    <i class="fas fa-oil-can service-feature__icon"></i>
-                    <h3>Lubricación Profesional</h3>
-                    <p>Usamos productos de alta calidad para minimizar el desgaste</p>
-                </div>
-                <div class="service-feature animate">
-                    <i class="fas fa-sliders-h service-feature__icon"></i>
-                    <h3>Ajuste y Calibración</h3>
-                    <p>Corrección de correas, cadenas, rodillos y rodamientos</p>
-                </div>
-                <div class="service-feature animate">
-                    <i class="fas fa-shield-alt service-feature__icon"></i>
-                    <h3>Revisión de Seguridad</h3>
-                    <p>Aprietes generales y chequeos mecánicos</p>
+                <div class="service-detail__gallery animate">
+                    <img src="../img/Mantenimiento/67cdc737-503f-4d04-b420-4fffec761623.jpg" alt="Mantenimiento de equipo cardiovascular">
+                    <img src="../img/Mantenimiento/22ab62b9-47e5-429e-bfff-5eb69d4de037.jpg" alt="Mantenimiento de máquina de musculación">
+                    <img src="../img/Mantenimiento/ff8eed10-4232-44dc-ae1d-506f1d0a0fcd.jpg" alt="Servicio técnico especializado">
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Beneficios -->
-    <section class="benefits section">
+    <!-- Galería de Trabajos -->
+    <section class="maintenance-gallery section">
         <div class="container">
-            <h2 class="section__title">Beneficios</h2>
-            <div class="benefits__grid">
-                <div class="benefit animate">
-                    <div class="benefit__icon">
-                        <i class="fas fa-chart-line"></i>
+            <h2 class="section__title">Nuestros Trabajos</h2>
+            <p class="section__subtitle">Conoce algunos de nuestros servicios de mantenimiento realizados</p>
+            
+            <div class="carousel">
+                <div class="carousel__container">
+                    <div class="carousel__slide">
+                        <img src="../img/Mantenimiento/67cdc737-503f-4d04-b420-4fffec761623.jpg" alt="Mantenimiento de equipo cardiovascular">
+                        <div class="carousel__caption">
+                            <h3>Mantenimiento Cardiovascular</h3>
+                            <p>Servicio especializado para equipos cardiovasculares</p>
+                        </div>
                     </div>
-                    <h3>Optimización de Recursos</h3>
-                    <p>A través de mantenimientos preventivos programados</p>
-                </div>
-                <div class="benefit animate">
-                    <div class="benefit__icon">
-                        <i class="fas fa-certificate"></i>
+                    <div class="carousel__slide">
+                        <img src="../img/Mantenimiento/22ab62b9-47e5-429e-bfff-5eb69d4de037.jpg" alt="Mantenimiento de máquina de musculación">
+                        <div class="carousel__caption">
+                            <h3>Equipos de Musculación</h3>
+                            <p>Mantenimiento integral de máquinas de peso</p>
+                        </div>
                     </div>
-                    <h3>Convenios Certificados</h3>
-                    <p>Diseñados según recomendaciones del fabricante</p>
-                </div>
-                <div class="benefit animate">
-                    <div class="benefit__icon">
-                        <i class="fas fa-check-circle"></i>
+                    <div class="carousel__slide">
+                        <img src="../img/Mantenimiento/ff8eed10-4232-44dc-ae1d-506f1d0a0fcd.jpg" alt="Servicio técnico especializado">
+                        <div class="carousel__caption">
+                            <h3>Servicio Técnico</h3>
+                            <p>Diagnóstico y reparación profesional</p>
+                        </div>
                     </div>
-                    <h3>Funcionamiento Óptimo</h3>
-                    <p>Aseguramiento del rendimiento de los equipos</p>
-                </div>
-                <div class="benefit animate">
-                    <div class="benefit__icon">
-                        <i class="fas fa-clock"></i>
+                    <div class="carousel__slide">
+                        <img src="../img/Mantenimiento/ee81957e-5488-4928-a247-1282b4165d11.jpg" alt="Mantenimiento preventivo">
+                        <div class="carousel__caption">
+                            <h3>Mantenimiento Preventivo</h3>
+                            <p>Cuidado proactivo de equipamiento</p>
+                        </div>
                     </div>
-                    <h3>Mayor Vida Útil</h3>
-                    <p>Prolongación de la durabilidad de las máquinas</p>
+                    <div class="carousel__slide">
+                        <img src="../img/Mantenimiento/effe4b25-18fe-4618-bcef-4b0e8ce75a8c.jpg" alt="Mantenimiento correctivo">
+                        <div class="carousel__caption">
+                            <h3>Mantenimiento Correctivo</h3>
+                            <p>Soluciones efectivas para cada equipo</p>
+                        </div>
+                    </div>
+                    <div class="carousel__slide">
+                        <img src="../img/Mantenimiento/3eefdfa7-80f2-4cfb-8625-ff6bfb16738c.jpg" alt="Servicio técnico">
+                        <div class="carousel__caption">
+                            <h3>Servicio Integral</h3>
+                            <p>Atención completa para tu gimnasio</p>
+                        </div>
+                    </div>
+                    <div class="carousel__slide">
+                        <img src="../img/Mantenimiento/6fc6991d-0f4b-4d97-b64b-afd0020c65e6.jpg" alt="Mantenimiento integral">
+                        <div class="carousel__caption">
+                            <h3>Mantenimiento Profesional</h3>
+                            <p>Servicio de calidad garantizada</p>
+                        </div>
+                    </div>
+                    <div class="carousel__slide">
+                        <img src="../img/Mantenimiento/47a64416-f438-4f7f-aac8-c8caab678eec.jpg" alt="Mantenimiento especializado">
+                        <div class="carousel__caption">
+                            <h3>Servicio Especializado</h3>
+                            <p>Expertos en todas las marcas</p>
+                        </div>
+                    </div>
                 </div>
+                <button class="carousel__button carousel__button--prev" aria-label="Anterior">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="carousel__button carousel__button--next" aria-label="Siguiente">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+                <div class="carousel__dots"></div>
             </div>
         </div>
     </section>
@@ -136,11 +156,11 @@
     <section class="cta section">
         <div class="container">
             <div class="cta__content animate">
-                <h2 class="cta__title">¿Necesitas un servicio de mantenimiento?</h2>
-                <p class="cta__description">Contáctanos para una evaluación profesional de tus equipos</p>
+                <h2 class="cta__title">¿Necesitas mantenimiento para tus equipos?</h2>
+                <p class="cta__description">Contáctanos para una evaluación profesional y personalizada</p>
                 <div class="cta__buttons">
                     <a href="contacto.html" class="button">Solicitar Servicio</a>
-                    <a href="https://wa.me/56972758330" class="button button--outline" target="_blank">
+                    <a href="https://wa.me/56972758330" class="button button--outline" target="_blank" rel="noopener">
                         <i class="fab fa-whatsapp"></i> WhatsApp
                     </a>
                 </div>
@@ -153,18 +173,34 @@
         <div class="container">
             <div class="footer__content">
                 <div class="footer__info">
-                    <img src="../img/logo/logo.png" alt="GYMTEC" class="footer__logo">
-                    <p>Sociedad Pastrian Hidalgo Servicios SpA</p>
-                    <p>RUT: 77.009.452-6</p>
+                    <img src="../img/logo/logo.png" alt="Logo GYMTEC" class="footer__logo" width="150" height="50">
+                    <div class="footer__contact">
+                        <div class="footer__contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+56 9 7275 8330</span>
+                        </div>
+                        <div class="footer__contact-item">
+                            <i class="fas fa-clock"></i>
+                            <span>Lunes a Viernes: 9:00 - 18:00</span>
+                        </div>
+                        <div class="footer__contact-item">
+                            <i class="fas fa-building"></i>
+                            <span>Sociedad Pastrian Hidalgo Servicios SpA</span>
+                        </div>
+                        <div class="footer__contact-item">
+                            <i class="fas fa-id-card"></i>
+                            <span>RUT: 77.009.452-6</span>
+                        </div>
+                    </div>
                 </div>
                 <div class="footer__social">
-                    <a href="https://wa.me/56972758330" class="footer__social-link" target="_blank" aria-label="WhatsApp">
+                    <a href="https://wa.me/56972758330" class="footer__social-link" target="_blank" rel="noopener">
                         <i class="fab fa-whatsapp"></i>
                     </a>
-                    <a href="https://www.instagram.com/gymtec.cl/" class="footer__social-link" target="_blank" aria-label="Instagram">
+                    <a href="https://www.instagram.com/gymtec.cl/" class="footer__social-link" target="_blank" rel="noopener">
                         <i class="fab fa-instagram"></i>
                     </a>
-                    <a href="https://www.facebook.com/gymtec.cl" class="footer__social-link" target="_blank" aria-label="Facebook">
+                    <a href="https://www.facebook.com/gymtec.cl" class="footer__social-link" target="_blank" rel="noopener">
                         <i class="fab fa-facebook-f"></i>
                     </a>
                 </div>
@@ -173,6 +209,7 @@
         </div>
     </footer>
 
-    <script src="../js/main.js"></script>
+    <!-- Scripts -->
+    <script src="../js/main.js" defer></script>
 </body>
 </html> 
