@@ -246,4 +246,29 @@ document.addEventListener('DOMContentLoaded', function() {
             nextSlide();
         }
     });
+});
+
+// Funciones para el modal de Instagram
+function openInstagramModal() {
+    document.getElementById('instagramModal').classList.add('active');
+    document.body.style.overflow = 'hidden';
+}
+
+function closeInstagramModal() {
+    document.getElementById('instagramModal').classList.remove('active');
+    document.body.style.overflow = '';
+}
+
+// Cerrar modal al hacer clic fuera del contenido
+document.getElementById('instagramModal').addEventListener('click', function(e) {
+    if (e.target === this) {
+        closeInstagramModal();
+    }
+});
+
+// Cerrar modal con la tecla ESC
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape' && document.getElementById('instagramModal').classList.contains('active')) {
+        closeInstagramModal();
+    }
 }); 

@@ -1244,14 +1244,17 @@ textarea.contact__form-input {
     background: linear-gradient(-45deg, var(--primary-color), var(--dark-color), var(--secondary-color));
     background-size: 200% 200%;
     animation: gradient 15s ease infinite;
-    padding: 3rem 0;
+    padding: 2rem 0 0;
     position: relative;
     overflow: hidden;
+    width: 100%;
 }
 
 .instagram .container {
-    max-width: 1200px;
-    margin: 0 auto;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 .instagram .section__title {
@@ -1267,59 +1270,44 @@ textarea.contact__form-input {
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     opacity: 0.9;
     font-size: 1rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     text-align: center;
 }
 
 .instagram__widget {
-    width: 100%;
-    height: 0;
-    padding-bottom: 25%; /* Reducido de 50% a 25% para la proporción en desktop */
-    position: relative;
+    width: 100vw;
+    margin: 0;
+    height: 550px;
     overflow: hidden;
-    border-radius: var(--border-radius);
-    box-shadow: var(--shadow);
+    border-radius: 0;
+    box-shadow: none;
+    background: transparent;
 }
 
-.lightwidget-widget {
-    position: absolute;
-    top: 0;
-    left: 0;
+.elfsight-app-751e2cea-b0cb-449b-be3e-8f1c1cd38be6 {
     width: 100% !important;
     height: 100% !important;
-    border: none;
-    background-color: transparent;
+    margin: 0 !important;
+    padding: 0 !important;
 }
 
 @media (max-width: 768px) {
     .instagram {
-        padding: 2rem 0;
+        padding: 2rem 0 0;
     }
-
-    .instagram .section__title {
-        font-size: 1.8rem;
-    }
-
+    
     .instagram__widget {
-        padding-bottom: 37.5%; /* Reducido de 75% a 37.5% para tablets */
+        height: 450px;
     }
 }
 
 @media (max-width: 480px) {
     .instagram {
-        padding: 1.5rem 0;
+        padding: 1.5rem 0 0;
     }
-
-    .instagram .section__title {
-        font-size: 1.6rem;
-    }
-
-    .instagram .section__subtitle {
-        font-size: 0.9rem;
-    }
-
+    
     .instagram__widget {
-        padding-bottom: 50%; /* Reducido de 100% a 50% para móviles */
+        height: 400px;
     }
 }
 
